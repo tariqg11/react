@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Amna Mukaddam ki phuddi mai
+          Islamabad mai 
         </p>
         <a
           className="App-link"
@@ -19,7 +19,7 @@ function App() {
         </a>
       </header>
       <p>
-          mera lund
+          tez barish!
         </p>
     </div>
   );

@@ -1,18 +1,8 @@
-version: '3'
+version: "3"
 services:
-  web:
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
+  frontend:
+    image: "dockerdoctor1/reactjenkins"
+    mem_limit: 128m
+    hostname: frontend
     ports:
-      - "3000:3000"
-    volumes:
-      - /app/node_modules
-  tests:
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
-    volumes:
-      - /app/node_modules
-      - .:/app
-    command: ["npm","run","test"]
+      - "80:80"
